@@ -39,7 +39,17 @@
     </div>
 </div>
   </div>
-
+  <script src="public/js/clmtrackr.js"></script>
+  <script src="public/js/model_pca_20_svm.js"></script>
+  <video id="inputVideo" width="400" height="300" autoplay loop>
+    <source src="./media/somevideo.ogv" type="video/ogg"/>
+  </video>
+  <script type="text/javascript">
+    var videoInput = document.getElementById('video');
+    var ctracker = new clm.tracker();
+    ctracker.init(pModel);
+    ctracker.start(videoInput);
+  </script>
   <script src="/js/index.js" type="text/javascript"></script>
   <% include _analytics %>
 </body>

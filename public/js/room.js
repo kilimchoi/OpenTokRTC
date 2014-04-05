@@ -82,6 +82,7 @@
         }, self.errorSignal);
         return self.filterData[self.session.connection.connectionId] = prop;
       });
+      
       $('#chatroom').click(function() {
         $(".container").css('right', '0px');
         return $("#messageInput").focus();
