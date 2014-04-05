@@ -78,4 +78,6 @@ function returnRoomResponse( res, data, json ){
 // *** start server, listen to port (predefined or 9393)
 // ***
 var port = process.env.PORT || 5000;
-app.listen(port);
+app.listen(port, function() { 
+   console.log("listening on port %d", port);
+});
